@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: heroku_nugget_production
-  username: heroku_nugget
-  password: <%= ENV['HEROKU_NUGGET_DATABASE_PASSWORD'] %>
+  database: d3gsop9pnkvr9m
+  username: ulnnelbmyfyzja
+  password: 64b198793dc073bfd6cee5c3b91a9fc040342bd182727cf55909e15f806baeb2
