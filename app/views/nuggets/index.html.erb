@@ -1,0 +1,10 @@
+<h1>All Nuggets</h1>
+
+<ul id="nuggets">
+  <% @nuggets.each do |nugget| %>
+    <li>
+      <%= link_to nugget.subject, nugget_path(nugget) %>
+
+    </li>
+  <% end %>
+</ul>
