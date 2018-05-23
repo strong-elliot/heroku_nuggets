@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 resources :nuggets
 resources :users
 
+
 root to: 'nuggets#index'
 
 
