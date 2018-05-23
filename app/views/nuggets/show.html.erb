@@ -2,4 +2,10 @@
 <h1><%= @nugget.subject %></h1>
   <p><%= @nugget.tidbit %></p>
 
-<%= link_to "<< Back to Nugget List", nuggets_path %>
+  
+  <%= link_to "<< Back to Nugget List", nuggets_path %>
+
+  <%= link_to "edit", edit_nugget_path(@nugget) %>
+
+<%= link_to "delete", nugget_path(@nugget), method: :delete, data: {confirm: "Really delete the article?"}
+%>

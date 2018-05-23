@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 resources :nuggets
 
-  root 'welcome#index'
+root to: 'nuggets#index'
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
