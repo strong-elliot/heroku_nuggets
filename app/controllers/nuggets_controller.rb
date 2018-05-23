@@ -1,6 +1,6 @@
 
 class NuggetsController < ApplicationController
-
+before_action :require_login, only: [:new, :create, :edit, :update, :destroy]
 include NuggetsHelper
 
   def index

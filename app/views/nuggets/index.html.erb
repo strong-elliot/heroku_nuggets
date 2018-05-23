@@ -10,6 +10,11 @@
   <% end %>
 
 
+
 </ul>
 
+
+
+<% if logged_in? %>
 <%= link_to "Create a New Nugget", new_nugget_path, class: "new_nugget" %>
+<% end %>

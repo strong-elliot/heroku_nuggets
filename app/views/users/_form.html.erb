@@ -33,8 +33,36 @@
 
   <div class="field">
     <%= form.label :cell_carrier %>
-    <%= form.text_field :cell_carrier, id: :user_cell_carrier %>
+    <%= form.select :cell_carrier, [['horrible', 1], ['poor', 2], ['mediocre', 3], ['good', 4], ['great', 5]], id: :user_cell_carrier%>
+
+<!--
+    <select :cell_carrier id: :user_cell_carrier>
+  <option value="">Select Person</option>
+  <option value="1">David</option>
+  <option value="2">Eileen</option>
+  <option value="3">Rafael</option>
+
+ -->
+
+    <!-- <%= form.text_field :cell_carrier, id: :user_cell_carrier %> -->
   </div>
+
+
+
+
+<!--
+  <select name="phone_stuff">
+<%= form.select :status, [["Single", "single"], ["Married", "married"], ["Engaged", "engaged"], ["In a Relationship", "relationship"]], {} %> -->
+
+    <!-- <%= form.select :cell_carrier,  [
+    ['First Option','first_option'],
+    ['Second Option','second_option']
+  ], {}, :prompt => 'Select One' %> -->
+
+       <!-- <option value="<%= "vztext" %>"><%= "Verizon" %></option> -->
+
+   </select>
+
 
   <div class="actions">
     <%= form.submit %>
