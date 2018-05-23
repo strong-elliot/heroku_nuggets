@@ -1,0 +1,25 @@
+<h1>Add a Nugget</h1>
+<%= form_for(@nugget) do |f| %>
+  <ul>
+  <% @nugget.errors.full_messages.each do |error| %>
+    <li><%= error %></li>
+  <% end %>
+  </ul>
+
+  <p>
+    <%= f.label :topic %><br />
+    <%= f.text_field :topic %>
+  </p>
+
+  <p>
+    <%= f.label :subject %><br />
+    <%= f.text_field :subject %>
+  </p>
+  <p>
+    <%= f.label :tidbit %><br />
+    <%= f.text_area :tidbit %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
