@@ -28,10 +28,10 @@ class UsersController < ApplicationController
 
     Pony.mail(
     :to => @user.email,
-    :from => "noreply@mysite.com",
-    :subject => "Confirm Account",
+    :from => "admin@FemiFanClub.com",
+    :subject => "Femi Appreciation",
     :headers => { 'Content-Type' => 'text/html' },
-    :body => ("fdfd")
+    :body => ("Thanks for your donation!")
 )
 
     respond_to do |format|
