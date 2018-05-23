@@ -21,6 +21,11 @@ def create
   # subject: params[:nugget][:subject],
   # topic: params[:nugget][:topic])
   @nugget.save
+
+
+  #
+  #
+  #
   flash.notice = "Nugget '#{@nugget.subject}' Created!"
   redirect_to nugget_path(@nugget)
 end
