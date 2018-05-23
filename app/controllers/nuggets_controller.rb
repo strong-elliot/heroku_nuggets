@@ -5,4 +5,9 @@ class NuggetsController < ApplicationController
     @nuggets = Nugget.all
   end
 
+
+def show
+  @nugget = Nugget.find(params[:id])
+end
+
 end

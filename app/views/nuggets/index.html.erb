@@ -3,8 +3,13 @@
 <ul id="nuggets">
   <% @nuggets.each do |nugget| %>
     <li>
+      <%= nugget.topic %>
       <%= link_to nugget.subject, nugget_path(nugget) %>
 
     </li>
   <% end %>
+
+
 </ul>
+
+<%= link_to "Create a New Nugget", new_nugget_path, class: "new_nugget" %>
