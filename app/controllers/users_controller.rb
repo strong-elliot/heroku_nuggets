@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
   before_action :zero_users_or_authenticated, only: [:new, :create]
 
+
   def zero_users_or_authenticated
     unless User.count == 0 || current_user
       redirect_to root_path
@@ -13,6 +14,7 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+
   end
 
   # GET /users/1
@@ -34,7 +36,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
-# Mail Controller
+# Mail Controller UNCOMMENT WHEN READY
 #     Pony.mail(
 #     :to => @user.email,
 #     :from => "admin@FemiFanClub.com",
