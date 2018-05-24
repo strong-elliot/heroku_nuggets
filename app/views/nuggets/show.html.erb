@@ -1,8 +1,8 @@
 
-<h1><%= @nugget.topic %></h1>
-<h1><%= @nugget.subject %></h1>
-  <p><%= @nugget.tidbit %></p>
 
+<h1><%= @nugget.topic %></h1>
+<h2><%= @nugget.subject %></h2>
+<p><%= @nugget.tidbit %></p>
 
 
 
@@ -12,3 +12,9 @@
 
 <%= link_to "delete", nugget_path(@nugget), method: :delete, data: {confirm: "Really delete the article?"}
 %>
+
+
+<% if current_user.has_role? "admin" %>
+<%= "Eyes" %>
+
+<% end %>
