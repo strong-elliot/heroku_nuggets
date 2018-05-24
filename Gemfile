@@ -9,9 +9,14 @@ end
 gem 'actionmailer'
 gem 'sorcery'
 
+#For multiple levels of auth
+gem 'cancancan', '~> 2.0'
+
 gem 'pony'
 
-gem 'sms_fu'
+gem "rolify"
+
+# gem 'sms_fu'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
 # Use postgresql as the database for Active Record
