@@ -37,13 +37,13 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
 # Mail Controller UNCOMMENT WHEN READY
-#     Pony.mail(
-#     :to => @user.email,
-#     :from => "admin@FemiFanClub.com",
-#     :subject => "Femi Appreciation",
-#     :headers => { 'Content-Type' => 'text/html' },
-#     :body => ("Thanks for your donation!")
-# )
+    Pony.mail(
+    :to => @user.email,
+    :from => "admin@FemiFanClub.com",
+    :subject => "Femi Appreciation",
+    :headers => { 'Content-Type' => 'text/html' },
+    :body => ("Thanks for your donation! This is a test on the text limit trying to see how long I can make a message and seeing what my phon does it and what send grid does Is this long enugh>??? Sure lets upload try. Good luck")
+)
 
     respond_to do |format|
       if @user.save
