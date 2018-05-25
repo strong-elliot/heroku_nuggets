@@ -196,7 +196,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  actionmailer
   byebug
   cancancan (~> 2.0)
   capybara (~> 2.13)
