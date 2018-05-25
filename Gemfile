@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 #Needed for mail to SMS
-# gem 'actionmailer'
+gem 'actionmailer'
 gem 'sorcery'
 
 #For multiple levels of auth
