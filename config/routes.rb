@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 resources :nuggets
 resources :users
 resources :user_sessions, only: [ :new, :create, :destroy ]
+resources :subs
 
 get 'login'  => 'user_sessions#new'
 get 'logout' => 'user_sessions#destroy'

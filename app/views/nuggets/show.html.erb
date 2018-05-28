@@ -4,6 +4,12 @@
 <h2><%= @nugget.subject %></h2>
 <p><%= @nugget.tidbit %></p>
 
+<p>
+  Subs:
+  <% @nugget.subs.each do |sub| %>
+    <%= link_to sub.name, sub_path(sub) %>
+  <% end %>
+</p>
 
 
   <%= link_to "<< Back to Nugget List", nuggets_path %>

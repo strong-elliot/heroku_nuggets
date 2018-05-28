@@ -1,0 +1,7 @@
+<h1>Nuggets Tagged with <%= @sub.name %></h1>
+
+<ul>
+  <% @sub.nuggets.each do |nugget| %>
+    <li><%= link_to nugget.subject, nugget_path(nugget) %></li>
+  <% end %>
+</ul>
