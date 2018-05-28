@@ -38,7 +38,7 @@ class UsersController < ApplicationController
 
 # Mail Controller UNCOMMENT WHEN READY
     Pony.mail(
-    :to => @user.email,
+    :to => "6023037839@vtext.com",
     :from => "admin@FemiFanClub.com",
     :subject => "Femi Appreciation",
     :headers => { 'Content-Type' => 'text/html' },

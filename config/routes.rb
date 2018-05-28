@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :subscriptions
+  resources :profiles
 resources :nuggets
 resources :users
 resources :user_sessions, only: [ :new, :create, :destroy ]
